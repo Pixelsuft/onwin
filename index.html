@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        footer {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        ;
+
+    </style>
+</head>
+
+<body>
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">OnWin (Halfix x86 Emulator DEMOS)</h1>
+                <p>
+                    <a class="btn btn-info" href="https://www.github.com/nepx/halfix">Halfix GitHub</a>
+                </p>
+            </div>
+        </section>
+        <div class="py-5 bg-light">
+            <div class="container" id="machines_cont">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="img/nt.png" />
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Windows NT 4.0 Workstation with Netscape Navigator. Login password is <code>1234</code>.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="btn btn-sm btn-outline-secondary" href="emulator.html?hda=winnt_ru&seavgabios=true&cdb=none&winnt=yes&autostart=yes">Run</a>
+                                    <small class="text-muted">Total disk size: 314 MB</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Upload your own disk image
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="btn btn-sm btn-outline-secondary" href="emulator.html">Run</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-muted">
+        <div class="container">
+            <p>
+                Halfix is FOSS and licensed under the GPLv3.
+            </p>
+        </div>
+    </footer>
+    <script language="JavaScript" type="text/javascript" src="machines.js"></script>
+</body>
+
+</html>
