@@ -3,6 +3,7 @@ var oses = [
     ['Windows NT 4.0 RU', 'winnt_ru', 'hda=winnt_ru&cdb=none&seavgabios=true&winnt=yes&autostart=yes'],
     ['Windows 95 RU', 'win95_ru', 'hda=win95_ru&seavgabios=true&cdb=none&autostart=yes'],
     ['Windows 95 RU (SVGA)', 'win95_ru_svga', 'hda=win95_ru_svga&cdb=none&autostart=yes'],
+    ['Upload your own disk image', 'own', 'own=true']
     
 ];
 for(var i=0;i<oses.length;i++)
@@ -28,11 +29,10 @@ for(var i=0;i<oses.length;i++)
     run_btn.type = 'button';
     run_btn.className = 'btn btn-sm btn-outline-secondary';
     run_btn.value = 'Run!';
-    run_btn.id = oses[i][2];
+    run_btn.id = i;
     run_btn.addEventListener('click', function(e){
-        console.log(run_btn.id);
         var new_href='emulator.html';
-        new_href += '?' + run_btn.id;
+        new_href += '?' + oses[e.srcElement.id][2];
         location.href=new_href;
     });
     card_flex.appendChild(run_btn);
