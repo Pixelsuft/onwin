@@ -1,14 +1,15 @@
 var container = document.getElementById('machines_cont');
-var col_md_4 = document.createElement('div');
-col_md_4.className = 'col-md-4';
-container.appendChild(col_md_4);
 var oses = [
-    ['Windows NT 4.0 RU', 'winnt_ru', '1'],
-    ['Windows 95 RU', 'win95_ru', '1'],
-    ['Windows 95 RU (SVGA)', 'win95_ru_svga', '1']
+    ['Windows NT 4.0 RU', 'winnt_ru', 'hda=winnt_ru&cdb=none&winnt=yes&autostart=yes'],
+    ['Windows 95 RU', 'win95_ru', 'hda=win95_ru&cdb=none&autostart=yes'],
+    ['Windows 95 RU (SVGA)', 'win95_ru_svga', 'hda=win95_ru_svga&cdb=none&autostart=yes'],
+    
 ];
 for(var i=0;i<oses.length;i++)
 {
+    var col_md_4 = document.createElement('div');
+    col_md_4.className = 'col-md-4';
+    container.appendChild(col_md_4);
     var card_mb4 = document.createElement('div');
     card_mb4.className = 'card mb-4 box-shadow';
     col_md_4.appendChild(card_mb4);
@@ -27,9 +28,11 @@ for(var i=0;i<oses.length;i++)
     run_btn.type = 'button';
     run_btn.className = 'btn btn-sm btn-outline-secondary';
     run_btn.value = 'Run!';
+    run_btn.id = oses[i][2];
     run_btn.addEventListener('click', function(e){
+        console.log(run_btn.id);
         var new_href='emulator.html';
-        new_href += '?' + oses[i][2];
+        new_href += '?' + run_btn.id;
         location.href=new_href;
     });
     card_flex.appendChild(run_btn);
