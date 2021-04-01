@@ -17,7 +17,7 @@ for(var i=0;i<oses.length;i++)
     os_img.src = 'img/' + oses[i][1] + '.png';
     card_mb4.appendChild(os_img);
     var card_body = document.createElement('div');
-    card_body.class='card-body';
+    card_body.className='card-body';
     var card_text = document.createElement('p');
     card_text.className = 'card-text';
     card_text.innerHTML = oses[i][0];
