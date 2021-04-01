@@ -19,6 +19,7 @@ for(var i=0;i<oses.length;i++)
     var card_body = document.createElement('div');
     card_body.class='card-body';
     var card_text = document.createElement('p');
+    card_text.className = 'card-text';
     card_text.innerHTML = oses[i][0];
     var card_flex = document.createElement('div');
     card_flex.className = 'd-flex justify-content-between align-items-center';
@@ -28,7 +29,7 @@ for(var i=0;i<oses.length;i++)
     run_btn.value = 'Run!';
     run_btn.addEventListener('click', function(e){
         var new_href='emulator.html';
-        new_href += '?' + oses[i][1];
+        new_href += '?' + oses[i][2];
         location.href=new_href;
     });
     card_flex.appendChild(run_btn);
