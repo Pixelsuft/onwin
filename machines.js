@@ -4,7 +4,7 @@ col_md_4.className = 'col-md-4';
 container.appendChild(col_md_4);
 var oses = [
     ['Windows NT 4.0 RU', 'winnt_ru', '1'],
-    ['Windows 95 RU', 'win95ru', '1'],
+    ['Windows 95 RU', 'win95_ru', '1'],
     ['Windows 95 RU (SVGA)', 'win95ru_svga', '1']
 ];
 for(var i=0;i<oses.length;i++)
