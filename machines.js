@@ -4,6 +4,7 @@ var oses = [
     ['Windows NT 4.0 RU', 'winnt_ru', 'hda=winnt_ru&cdb=none&seavgabios=true&winnt=yes&autostart=yes'],
     ['Windows 95 RU', 'win95_ru', 'hda=win95_ru&seavgabios=true&cdb=none&autostart=yes'],
     ['Windows 95 RU (SVGA)', 'win95_ru_svga', 'hda=win95_ru_svga&cdb=none&autostart=yes'],
+    ['Windows XP RU', 'winxp_ru', 'hda=winxp_ru&cdb=none&autostart=yes'],
     ['Upload your own disk image', 'own', 'own=true']
     
 ];
