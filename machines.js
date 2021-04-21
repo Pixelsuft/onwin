@@ -1,5 +1,6 @@
 var container = document.getElementById('machines_cont');
 var oses = [
+    ['Windows 1.01', 'win101', 'hda=win101&cdb=none&seavgabios=true&autostart=yes'],
     ['Windows NT 4.0 + self virtualization', 'winnt', 'hda=winnt&cdb=none&seavgabios=true&winnt=yes&autostart=yes'],
     ['Windows NT 4.0 RU', 'winnt_ru', 'hda=winnt_ru&cdb=none&seavgabios=true&winnt=yes&autostart=yes'],
     ['Windows 95 RU', 'win95_ru', 'hda=win95_ru&seavgabios=true&cdb=none&autostart=yes'],
