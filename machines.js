@@ -4,9 +4,13 @@ var oses = [
     ['Windows 3.1 RU', 'win310_ru', 'hda=win310_ru&cdb=none&autostart=yes'],
     ['Windows NT 4.0 + self virtualization', 'winnt', 'hda=winnt&cdb=none&seavgabios=true&winnt=yes&autostart=yes'],
     ['Windows NT 4.0 RU', 'winnt_ru', 'hda=winnt_ru&cdb=none&seavgabios=true&winnt=yes&autostart=yes'],
+    ['Windows 95', 'win95', 'hda=win95&seavgabios=true&cdb=none&autostart=yes'],
+    ['Windows 95 (SVGA)', 'win95_svga', 'hda=win95_svga&cdb=none&autostart=yes'],
     ['Windows 95 RU', 'win95_ru', 'hda=win95_ru&seavgabios=true&cdb=none&autostart=yes'],
     ['Windows 95 RU (SVGA)', 'win95_ru_svga', 'hda=win95_ru_svga&cdb=none&autostart=yes'],
-    ['Windows XP RU', 'winxp_ru', 'hda=winxp_ru&cdb=none&autostart=yes'],
+    ['Windows 98 RU', 'win98_ru', 'hda=win98_ru&seavgabios=true&cdb=none&autostart=yes'],
+    ['Windows 98 RU (SVGA)', 'win98_ru_svga', 'hda=win98_ru_svga&cdb=none&autostart=yes'],
+    ['Windows XP RU (BSOD CANT FIX)', 'winxp_ru', 'hda=winxp_ru&cdb=none&autostart=yes'],
     ['Upload your own disk image', 'own', 'own=true']
     
 ];
